@@ -1,144 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iman Hosseini Pour</title>
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/3ec99ee3dc.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta
+      name="description"
+      content="Iman Hosseini Pour — full-stack developer building thoughtful, reliable digital products."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Iman Hosseini Pour — Full-Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#0a0a0a",
+              surface: "#141414",
+              line: "#292929",
+              accent: "#ff5c1a",
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-zinc-600 h-screen">
-    <div class="flex flex-col justify-center items-center min-h-screen">
-      <div class="bg-zinc-800 p-5 rounded border-4 border-zinc-400">
-        <header class="flex flex-col space-y-4 items-center">
-          <img
-            class="rounded-full w-32 md:w-64"
-            src="/dist/profile.jpg"
-            alt="profile image"
-          />
-          <div>
-            <h1 class="text-white text-center text-3xl font-extrabold">
-              Iman Hosseini Pour
-            </h1>
-            <h2 class="text-white text-2xl text-center">
-              Yet Another
-              <span class="text-sky-500 font-bold">Full-Stack</span> Developer
-            </h2>
-            <h3 class="text-amber-400 text-center font-semibold">
-              +98 902 512 1222 | Imanhpr1999@gmail.com
-            </h3>
-          </div>
-        </header>
-        <section class="flex flex-col space-y-3">
-          <div
-            class="flex justify-center space-x-4 border-zinc-200 border-b py-2"
+
+  <body class="bg-background font-sans text-neutral-100 antialiased">
+    <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-6 sm:px-10">
+      <header class="flex items-center justify-between border-b border-line py-6">
+        <a href="#top" class="text-sm font-bold tracking-tight">
+          Iman<span class="text-accent">.</span>
+        </a>
+        <div class="flex items-center gap-5 text-sm">
+          <a
+            href="https://flowcv.com/resume/a4mttjsg7e"
+            target="_blank"
+            rel="noreferrer"
+            class="text-neutral-400 transition hover:text-white"
           >
-            <a href="https://github.com/imanhpr">
-              <svg
-                class="h-8 fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
-                />
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/imanhpr/">
-              <svg
-                class="h-8 fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                />
-              </svg>
-            </a>
-            <a href="https://twitter.com/imanhpr_media">
-              <svg
-                class="h-8 fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
-                />
-              </svg>
-            </a>
-          </div>
+            View CV
+          </a>
+          <a
+            href="mailto:imanhpr1999@gmail.com"
+            class="text-neutral-400 transition hover:text-white"
+          >
+            Get in touch
+          </a>
+        </div>
+      </header>
+
+      <main id="top" class="flex flex-1 items-center py-16 sm:py-24">
+        <div class="grid w-full gap-14 lg:grid-cols-[1fr_360px] lg:items-center">
           <div>
-            <h3 class="text-xl font-bold text-white py-2">Tech Stack :</h3>
-            <div class="grid gap-2 md:grid-cols-3 text-white">
-              <div class="flex space-x-2">
-                <img src="/dist/typescript.png" class="bg-white" />
-                <p>TypeScript</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/node-js.png" />
-                <p>NodeJs</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/mongodb.png" />
-                <p>MongoDB</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/postgresql.png" />
-                <p>PostgreSql</p>
-              </div>
-              <div class="flex space-x-2">
-                <img
-                  src="/dist/deno.png"
-                  class="w-[32px] bg-white rounded-full"
-                />
-                <p>Deno</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/react.png" />
-                <p>React / React-Native</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/redis.png" />
-                <p>Redis</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/kafka.png" />
-                <p>Apache Kafka</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/docker.png" />
-                <p>Docker</p>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-white py-2">
-              Things I'm interested to learn
-            </h3>
-            <div class="grid gap-2 md:grid-cols-3 text-white">
-              <div class="flex space-x-2">
-                <img src="/dist/c.png" />
-                <p>C++</p>
-              </div>
-              <div class="flex space-x-2">
-                <img
-                  src="/dist/kubernetes.png"
-                  class="h-6 bg-white rounded-full"
-                />
-                <p>Kubernetes</p>
-              </div>
-              <div class="flex space-x-2">
-                <img src="/dist/cassandra.png" />
-                <p>Apache Cassandra</p>
-              </div>
+            <p class="mb-6 text-sm font-semibold text-accent">Full-stack developer</p>
+            <h1 class="max-w-3xl text-5xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-7xl">
+              Hi, I'm Iman.<br />I build software for the web.
+            </h1>
+            <p class="mt-8 max-w-2xl text-lg leading-8 text-neutral-400">
+              I design and build reliable digital products, from backend systems and APIs to clear, responsive interfaces.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-3">
+              <a
+                href="mailto:imanhpr1999@gmail.com"
+                class="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-500"
+              >
+                Email me
+              </a>
+              <a
+                href="https://github.com/imanhpr"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full border border-line px-6 py-3 text-sm font-semibold transition hover:border-neutral-500"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://flowcv.com/resume/a4mttjsg7e"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full border border-line px-6 py-3 text-sm font-semibold transition hover:border-neutral-500"
+              >
+                View CV
+              </a>
             </div>
           </div>
-        </section>
-      </div>
+
+          <img
+            src="dist/profile.jpg"
+            alt="Portrait of Iman Hosseini Pour"
+            class="aspect-square w-full max-w-sm rounded-2xl object-cover grayscale transition duration-500 hover:grayscale-0"
+          />
+        </div>
+      </main>
+
+      <section class="border-t border-line py-12" aria-labelledby="stack-heading">
+        <div class="grid gap-6 md:grid-cols-[180px_1fr]">
+          <h2 id="stack-heading" class="text-sm font-semibold text-neutral-400">Technologies</h2>
+          <ul class="flex flex-wrap gap-2" aria-label="Technology stack">
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/typescript.png" alt="" class="h-5 w-5 rounded" />TypeScript</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/node-js.png" alt="" class="h-5 w-5 object-contain" />Node.js</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/react.png" alt="" class="h-5 w-5 object-contain" />React</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/postgresql.png" alt="" class="h-5 w-5 object-contain" />PostgreSQL</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/mongodb.png" alt="" class="h-5 w-5 object-contain" />MongoDB</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/redis.png" alt="" class="h-5 w-5 object-contain" />Redis</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/nats.svg" alt="" class="h-5 w-5 object-contain" />NATS</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/docker.png" alt="" class="h-5 w-5 object-contain" />Docker</li>
+            <li class="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm"><img src="dist/golang.svg" alt="" class="h-5 w-5 object-contain" />Go</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="flex flex-col gap-4 border-t border-line py-8 text-sm text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 Iman Hosseini Pour</p>
+        <div class="flex gap-5">
+          <a class="transition hover:text-white" href="https://github.com/imanhpr" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="transition hover:text-white" href="https://www.linkedin.com/in/imanhpr/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="transition hover:text-white" href="mailto:imanhpr1999@gmail.com">Email</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
